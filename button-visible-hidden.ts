@@ -1,9 +1,10 @@
 //	html:
 
+// 	controls the visibility of td below:
+	<button class="btn btn-primary" (click)='toggleImage()'> {{showImage ? 'Hide' : 'Show'}} Image </button>
 
-//	<button class="btn btn-primary" (click)='toggleImage()'>Show Image</button> // controls the visibility of td below:
 
-//   <td><img *ngIf='showImage'  	// this item is visible-hidden
+		<td><img *ngIf='showImage'  	// this item is visible-hidden
 		src={{product.imageUrl}} 
 		[style.width.px]='imageWidth' 
 		[style.margin.px]='imageMargin' ></td>
