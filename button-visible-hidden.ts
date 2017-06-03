@@ -2,7 +2,7 @@
 
 // 	controls the visibility of td below:
 	<button class="btn btn-primary" (click)='toggleImage()'> {{showImage ? 'Hide' : 'Show'}} Image </button>
-
+								// ^ changes caption
 
 		<td><img *ngIf='showImage'  	// this item is visible-hidden
 		src={{product.imageUrl}} 
