@@ -30,12 +30,12 @@ export class ProductFilterPipe implements PipeTransform{
 }
 // using custom pipe:
 	// add pipe to angular module.
-		@NgModule({
-		  declarations: [
-		    AppComponent,
-		    ProductListComponent,
-		    //ProductFilterPipe
-		  ],
+// 		@NgModule({
+// 		  declarations: [
+// 		    AppComponent,
+// 		    ProductListComponent,
+ 		    ProductFilterPipe
+// 		  ],
 	// add pipe to html element:
 		<tr *ngFor ='let product of products | productFilter: listFilter'>
 									// ^ defined in class export in component:
